@@ -1,0 +1,13 @@
+#N canvas 680 388 430 225 10;
+#X obj 19 59 where > 5 0 0.1;
+#X floatatom 19 20 5 0 0 0 - - -;
+#X floatatom 137 20 5 0 0 0 - - -;
+#X obj 137 59 where > 5 0 DOOD!;
+#X text 46 188 where (input 1) is (operation) than (input/arg 2) x
+\, else y;
+#X floatatom 19 81 5 0 0 0 - - -;
+#X obj 137 81 print sweet?;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;

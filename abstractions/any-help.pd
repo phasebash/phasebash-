@@ -1,0 +1,28 @@
+#N canvas 730 422 450 300 10;
+#X floatatom 181 41 5 0 0 0 - - -;
+#X obj 141 40 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 208 46 1 2 3;
+#X msg 227 74 haha;
+#X obj 157 148 print;
+#X msg 230 97 haha 111 lol omg a 323;
+#X msg 85 92 hi there;
+#X text 25 191 comment;
+#X obj 259 219 list prepend set;
+#X obj 259 241 list trim;
+#X msg 259 263 hello!;
+#X obj 260 156 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 157 126 any;
+#X obj 259 197 any hello!;
+#X connect 0 0 12 1;
+#X connect 1 0 12 0;
+#X connect 2 0 12 1;
+#X connect 3 0 12 1;
+#X connect 5 0 12 1;
+#X connect 6 0 12 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 11 0 13 0;
+#X connect 12 0 4 0;
+#X connect 13 0 8 0;
