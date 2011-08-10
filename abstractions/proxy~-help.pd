@@ -1,0 +1,10 @@
+#N canvas 105 513 520 300 10;
+#X obj 69 82 proxy~ phasor~ 400;
+#X obj 82 171 dac~;
+#X obj 76 131 *~ 0.25;
+#X floatatom 64 40 5 0 0 0 - - -;
+#X text 261 83 create a basic tilde object programmatically;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 0 1 1;
+#X connect 3 0 0 0;

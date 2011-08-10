@@ -1,0 +1,12 @@
+#N canvas 778 506 450 300 10;
+#X obj 137 197 dac~;
+#X obj 137 165 *~ 0.25;
+#X floatatom 136 37 5 0 0 0 - - -;
+#X obj 136 63 mtof;
+#X obj 137 102 resample~ 16 phasor~ 440;
+#X text 232 37 probably a worthless abstraction;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;

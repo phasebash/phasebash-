@@ -1,4 +1,4 @@
-#N canvas 538 166 450 300 10;
+#N canvas 296 462 450 300 10;
 #X obj 28 24 inlet;
 #X obj 28 59 t b b;
 #X obj 28 237 outlet;
@@ -9,7 +9,7 @@
 #X obj 91 198 t b;
 #X obj 91 220 f 1;
 #X obj 28 197 == 0;
-#X obj 28 134 route float;
+#X obj 29 134 route float;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 3 0 4 0;
