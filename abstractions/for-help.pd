@@ -1,0 +1,12 @@
+#N canvas 733 341 450 300 10;
+#X obj 113 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 113 119 print;
+#X obj 113 71 for 0 1 10;
+#X text 224 20 inlet1: start (inclusive);
+#X text 224 32 inlet2: end (inclusive);
+#X text 225 49 inlet3: number of steps;
+#X msg 135 29 0 9 10;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 6 0 2 0;
