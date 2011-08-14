@@ -1,0 +1,23 @@
+#N canvas 151 454 472 357 10;
+#X obj 45 248 print string;
+#X obj 150 247 print optstring;
+#X obj 304 125 r bind-\$0-value-set;
+#X obj 304 147 print value-set;
+#X obj 45 226 r \$0-string;
+#X obj 150 226 r \$0-opt-string;
+#X obj 8 61 bind \$0 lol-sec \$1 100;
+#X obj 8 81 bind \$0 salsa 500 0;
+#X obj 8 121 bind \$0 opt-string 0 ../thatwave.wav;
+#X obj 8 101 bind \$0 string ../fristwave.wav;
+#X msg 8 10 haha 400 \, lol 200 \, ghetto 500 \, opt-string ../../../opt-wave.wav
+\, salsa 600;
+#X obj 254 226 r \$0-salsa;
+#X obj 254 247 print salsa;
+#X connect 2 0 3 0;
+#X connect 4 0 0 0;
+#X connect 5 0 1 0;
+#X connect 6 0 7 0;
+#X connect 7 0 9 0;
+#X connect 9 0 8 0;
+#X connect 10 0 6 0;
+#X connect 11 0 12 0;

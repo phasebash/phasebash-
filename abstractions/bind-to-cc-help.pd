@@ -1,0 +1,18 @@
+#N canvas 917 335 450 300 10;
+#X floatatom 52 103 5 0 0 0 - - -;
+#X text 28 29 bind-to-cc exposes an existing bound paramter to MIDI
+CC on a given port and CC number. The values of the paramter are mapped
+from a given range into 0-127. An optional curvature argument is available
+for non-linear parameter mappings.;
+#X msg 52 122 paramOne \$1;
+#X obj 197 209 ctlin 60 1;
+#X floatatom 197 231 5 0 0 0 - - -;
+#X obj 52 145 bind \$0 paramOne 0;
+#X obj 46 203 r \$0-paramOne;
+#X obj 46 225 print ONE;
+#X obj 167 145 bind-to-cc \$0 paramOne 60 1 -1 1;
+#X text 143 100 only linear parameter mappings are implemented;
+#X connect 0 0 2 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 6 0 7 0;
