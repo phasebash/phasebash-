@@ -1,11 +1,15 @@
-#N canvas 617 461 450 300 10;
+#N canvas 930 489 450 300 10;
 #X obj 55 22 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X floatatom 55 85 5 0 0 0 - - -;
 #X obj 55 63 def-f \$1 10;
 #X floatatom 127 86 5 0 0 0 - - -;
 #X obj 127 63 def-f \$1 -4;
+#X floatatom 200 85 5 0 0 0 - - -;
+#X obj 200 62 def-f 50 -4;
 #X connect 0 0 2 0;
 #X connect 0 0 4 0;
+#X connect 0 0 6 0;
 #X connect 2 0 1 0;
 #X connect 4 0 3 0;
+#X connect 6 0 5 0;

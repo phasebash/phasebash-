@@ -1,5 +1,5 @@
 #N canvas 730 422 450 300 10;
-#X floatatom 181 41 5 0 0 0 - - -;
+#X floatatom 180 36 5 0 0 0 - - -;
 #X obj 141 40 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg 208 46 1 2 3;
@@ -12,17 +12,19 @@
 #X obj 259 241 list trim;
 #X obj 260 156 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
+#X msg 259 263 bollocks!;
 #X obj 157 126 any;
 #X obj 259 197 any hello!;
-#X msg 259 263 bollocks!;
-#X connect 0 0 11 1;
-#X connect 1 0 11 0;
-#X connect 2 0 11 1;
-#X connect 3 0 11 1;
-#X connect 5 0 11 1;
-#X connect 6 0 11 0;
+#X msg 102 61 1 2 3;
+#X connect 0 0 12 1;
+#X connect 1 0 12 0;
+#X connect 2 0 12 1;
+#X connect 3 0 12 1;
+#X connect 5 0 12 1;
+#X connect 6 0 12 0;
 #X connect 8 0 9 0;
-#X connect 9 0 13 0;
-#X connect 10 0 12 0;
-#X connect 11 0 4 0;
-#X connect 12 0 8 0;
+#X connect 9 0 11 0;
+#X connect 10 0 13 0;
+#X connect 12 0 4 0;
+#X connect 13 0 8 0;
+#X connect 14 0 12 0;
