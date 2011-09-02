@@ -1,0 +1,9 @@
+#N canvas 343 22 450 300 10;
+#X text 36 19 a specialized object proxy for abstractions following
+the tabread~/tabread4~ interface;
+#X obj 276 212 tabread~;
+#X obj 220 265 table \$0-array;
+#X obj 38 205 proxy-tabread~ tabread~;
+#X obj 133 146 proxy-tabread~ tabread4~;
+#X obj 150 116 proxy-tabread~ tabread4~ \$0-array;
+#X obj 341 211 tabread4~ \$0-array;
