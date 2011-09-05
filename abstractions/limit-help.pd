@@ -1,0 +1,13 @@
+#N canvas 794 22 450 300 10;
+#X obj 54 107 limit 1;
+#X obj 196 71 limit 5;
+#X msg 52 52 1 \, 2 \, 3;
+#X obj 54 129 print limit-1;
+#X msg 196 39 1 \, 2 \, 3 \, 4 \, 5 \, 6;
+#X obj 196 93 print limit-5;
+#X msg 106 79 reset;
+#X connect 0 0 3 0;
+#X connect 1 0 5 0;
+#X connect 2 0 0 0;
+#X connect 4 0 1 0;
+#X connect 6 0 0 1;

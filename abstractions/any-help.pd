@@ -16,6 +16,12 @@
 #X obj 157 126 any;
 #X obj 259 197 any hello!;
 #X msg 102 61 1 2 3;
+#X obj 95 206 any lol;
+#X obj 90 168 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 95 228 print;
+#X obj 147 230 print;
+#X obj 147 207 any 2;
 #X connect 0 0 12 1;
 #X connect 1 0 12 0;
 #X connect 2 0 12 1;
@@ -28,3 +34,7 @@
 #X connect 12 0 4 0;
 #X connect 13 0 8 0;
 #X connect 14 0 12 0;
+#X connect 15 0 17 0;
+#X connect 16 0 15 0;
+#X connect 16 0 19 0;
+#X connect 19 0 18 0;
