@@ -1,0 +1,21 @@
+#N canvas 247 486 450 300 10;
+#X obj 133 54 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 133 165 timer;
+#X obj 133 111 t b b;
+#X obj 133 187 print times;
+#X msg 213 83 repeats 2 1;
+#X msg 222 136 hold \$1;
+#X obj 224 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 133 89 gmetro 500;
+#X msg 190 55 periods 200 100 200 300;
+#X connect 0 0 7 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 2 1 1 1;
+#X connect 4 0 7 1;
+#X connect 5 0 7 1;
+#X connect 6 0 5 0;
+#X connect 7 0 2 0;
+#X connect 8 0 7 1;

@@ -1,0 +1,25 @@
+#N canvas 314 224 450 300 10;
+#X obj 27 74 print c;
+#X obj 102 74 print reset;
+#X obj 27 25 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 30 193 print c;
+#X obj 105 193 print reset;
+#X obj 30 144 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 27 49 counter 0 5 1;
+#X obj 30 168 counter 0 5 2;
+#X obj 214 98 print c;
+#X obj 289 98 print reset;
+#X obj 214 49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 214 73 counter 1 1 1;
+#X connect 2 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 0 0;
+#X connect 6 1 1 0;
+#X connect 7 0 3 0;
+#X connect 7 1 4 0;
+#X connect 10 0 11 0;
+#X connect 11 0 8 0;
+#X connect 11 1 9 0;
