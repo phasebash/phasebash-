@@ -1,4 +1,4 @@
-#N canvas 759 389 450 300 10;
+#N canvas 758 432 572 292 10;
 #X obj 50 112 defined;
 #X floatatom 50 134 5 0 0 0 - - -;
 #X obj 77 41 loadbang;
@@ -19,6 +19,13 @@ symbol;
 #X obj 93 167 defined 5;
 #X floatatom 161 188 5 0 0 0 - - -;
 #X obj 161 166 defined \$0-ha;
+#X msg 390 32 d;
+#X msg 421 30 22;
+#X obj 412 67 defined;
+#X obj 412 89 print;
+#X msg 454 31 0;
+#X obj 489 33 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X connect 0 0 1 0;
 #X connect 2 0 0 0;
 #X connect 2 0 3 0;
@@ -35,3 +42,8 @@ symbol;
 #X connect 12 0 13 0;
 #X connect 15 0 14 0;
 #X connect 17 0 16 0;
+#X connect 18 0 20 0;
+#X connect 19 0 20 0;
+#X connect 20 0 21 0;
+#X connect 22 0 20 0;
+#X connect 23 0 20 0;

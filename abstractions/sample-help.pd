@@ -1,0 +1,4 @@
+#N canvas 707 80 450 300 10;
+#X obj 44 98 sample BADASMPLE;
+#X obj 20 34 sample KICK ~/Samples/Drum/Sound/Generics/Kicks/kick_14d.wav
+1 44100;
