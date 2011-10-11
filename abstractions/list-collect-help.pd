@@ -1,0 +1,12 @@
+#N canvas 518 345 450 300 10;
+#X obj 117 107 list-collect;
+#X msg 111 24 1 \, 2 \, 3 \, 4 \, 5;
+#X msg 128 50 6 \, 7 \, 8 \, 9 \, 10;
+#X obj 117 129 print;
+#X msg 140 75 bang;
+#X msg 215 109 bang;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 1;
