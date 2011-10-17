@@ -1,23 +1,25 @@
-#N canvas 271 492 450 300 10;
+#N canvas 572 501 450 300 10;
 #X floatatom 93 63 5 0 0 0 - - -;
 #X obj 94 84 sig~ 1;
 #X obj 97 157 snapshot~;
 #X floatatom 97 179 5 0 0 0 - - -;
-#X obj 166 158 metro 10;
-#X obj 164 136 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 210 189 metro 10;
+#X obj 208 167 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X msg 174 51 append 0 0.5 1000 \, append 1 2 5000;
 #X msg 184 84 next;
 #X msg 224 85 rewind;
 #X msg 276 83 loopAll 1;
 #X obj 97 135 pline~;
+#X msg 174 51 append 0 0.5 1000 1 \, append 1 2 5000 1;
+#X obj 203 134 loadbang;
 #X connect 0 0 1 0;
-#X connect 1 0 10 0;
+#X connect 1 0 9 0;
 #X connect 2 0 3 0;
 #X connect 4 0 2 0;
 #X connect 5 0 4 0;
-#X connect 6 0 10 1;
-#X connect 7 0 10 1;
-#X connect 8 0 10 1;
-#X connect 9 0 10 1;
-#X connect 10 0 2 0;
+#X connect 6 0 9 1;
+#X connect 7 0 9 1;
+#X connect 8 0 9 1;
+#X connect 9 0 2 0;
+#X connect 10 0 9 1;
+#X connect 11 0 5 0;
