@@ -1,0 +1,13 @@
+#N canvas 711 292 450 300 10;
+#X obj 127 79 handle \$0 someParam;
+#X obj 127 101 handle \$0 otherParam;
+#X obj 123 207 r \$0-someParam;
+#X floatatom 123 229 5 0 0 0 - - -;
+#X obj 261 201 r \$0-otherParam;
+#X msg 126 31 someParam 100 \, noParam 4 \, otherParam 1;
+#X floatatom 261 223 5 0 0 0 - - -;
+#X text 134 145 like bind but without defaults and does not init;
+#X connect 0 0 1 0;
+#X connect 2 0 3 0;
+#X connect 4 0 6 0;
+#X connect 5 0 0 0;
