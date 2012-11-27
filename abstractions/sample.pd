@@ -1,4 +1,4 @@
-#N canvas 59 483 579 307 10;
+#N canvas 0 48 862 1150 10;
 #X obj 12 19 inlet;
 #X obj 14 240 outlet;
 #X obj 308 40 loadbang;
@@ -7,8 +7,8 @@
 #X obj 335 131 bind \$0 channels \$3 0;
 #X obj 335 153 bind \$0 samplerate \$4 0;
 #X obj 308 64 t b b;
-#N canvas 0 22 450 300 \$0-tables 0;
-#X obj 0 0 table 1371-table-1 0;
+#N canvas 0 48 862 1150 \$0-tables 0;
+#X obj 0 0 table 1031-table-1 0;
 #X restore 399 231 pd \$0-tables;
 #N canvas 628 415 571 347 load-sample 0;
 #X obj 16 17 inlet;
@@ -30,7 +30,7 @@
 #X connect 7 1 4 1;
 #X connect 8 0 1 0;
 #X restore 308 252 pd load-sample;
-#N canvas 230 290 448 413 init-requirements 0;
+#N canvas 0 48 862 1150 init-requirements 0;
 #X obj 9 14 inlet;
 #X obj 16 375 outlet;
 #X obj 88 322 r \$0-alias;

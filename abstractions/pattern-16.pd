@@ -1,9 +1,8 @@
-#N canvas 710 88 453 377 10;
+#N canvas 0 48 862 1150 10;
 #X obj 64 26 inlet;
 #X obj 184 26 inlet;
 #X obj 64 326 outlet;
-#X obj 64 276 bang-every;
-#N canvas 873 33 443 741 get-argument-list 0;
+#N canvas 0 48 862 1150 get-argument-list 0;
 #X obj 42 111 pack \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
 \$13 \$14 \$15 \$16;
 #X obj 67 69 loadbang;
@@ -53,18 +52,12 @@
 #X obj 184 70 route list bang;
 #X obj 121 163 list-rotate;
 #X obj 121 196 list split 1;
-#X obj 64 298 t b b;
 #X obj 64 48 route bang;
-#X msg 121 236 set \$1;
-#X connect 0 0 9 0;
-#X connect 1 0 5 0;
-#X connect 3 0 8 0;
-#X connect 4 0 6 1;
-#X connect 5 0 6 1;
-#X connect 5 1 4 0;
-#X connect 6 0 7 0;
-#X connect 7 0 10 0;
-#X connect 8 0 2 0;
-#X connect 8 1 6 0;
-#X connect 9 0 3 0;
-#X connect 10 0 3 1;
+#X connect 0 0 7 0;
+#X connect 1 0 4 0;
+#X connect 3 0 5 1;
+#X connect 4 0 5 1;
+#X connect 4 1 3 0;
+#X connect 5 0 6 0;
+#X connect 6 0 2 0;
+#X connect 7 0 5 0;
