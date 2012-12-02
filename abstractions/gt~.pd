@@ -1,0 +1,24 @@
+#N canvas 992 469 402 301 10;
+#X obj 81 20 inlet~;
+#X obj 34 20 inlet~;
+#X obj 20 262 outlet~;
+#X obj 20 223 tabread~ \$0-lookup;
+#X obj 91 177 table \$0-lookup 2;
+#X obj 144 44 loadbang;
+#N canvas 0 22 450 300 init 0;
+#X obj 16 44 inlet;
+#X obj 16 66 t b b;
+#X obj 45 116 pack \$0 1;
+#X msg 45 138 \; \$1-lookup 0 1 0;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X restore 144 66 pd init;
+#X obj 20 178 /~;
+#X text 73 262 outlet~: 0 when inlet~2 is >= inlet~1 \, 1 otherwise.
+;
+#X connect 0 0 7 0;
+#X connect 1 0 7 1;
+#X connect 3 0 2 0;
+#X connect 5 0 6 0;
+#X connect 7 0 3 0;
