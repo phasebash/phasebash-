@@ -1,0 +1,6 @@
+#N canvas 1845 750 450 300 10;
+#X msg 134 32 1 2 3 4 5;
+#X obj 147 72 map + 1;
+#X obj 139 115 print;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;

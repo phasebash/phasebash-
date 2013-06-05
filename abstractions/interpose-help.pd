@@ -1,0 +1,8 @@
+#N canvas 1788 760 450 300 10;
+#X msg 198 129 bing bong;
+#X msg 134 70 1 2 3 4 5;
+#X obj 147 183 print;
+#X obj 147 161 interpose;
+#X connect 0 0 3 1;
+#X connect 1 0 3 0;
+#X connect 3 0 2 0;
