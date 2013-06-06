@@ -1,6 +1,11 @@
-#N canvas 1972 1016 450 300 10;
+#N canvas 1 49 958 1150 10;
 #X msg 98 38 1 2 3;
 #X obj 98 118 print;
+#X msg 184 37 1 2 3;
+#X obj 184 117 print;
 #X obj 98 68 reduce +;
-#X connect 0 0 2 0;
-#X connect 2 0 1 0;
+#X obj 184 67 reduce * 1;
+#X connect 0 0 4 0;
+#X connect 2 0 5 0;
+#X connect 4 0 1 0;
+#X connect 5 0 3 0;
