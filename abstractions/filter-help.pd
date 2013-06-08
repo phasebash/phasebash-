@@ -2,5 +2,10 @@
 #X obj 91 155 filter > 5;
 #X msg 84 95 1 2 3 4 5 6 7 8 9 10;
 #X obj 91 177 print those > 5;
+#X msg 320 106 1 2 3 4 0 0 get your 0 booty 0 on the floor;
+#X obj 320 164 print defined items;
+#X obj 320 133 filter defined 1;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;

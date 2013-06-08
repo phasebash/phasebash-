@@ -1,4 +1,4 @@
-#N canvas 574 364 450 300 10;
+#N canvas 1 49 958 1150 10;
 #X obj 28 14 inlet;
 #X obj 28 237 outlet;
 #X obj 28 112 list trim;
@@ -11,6 +11,7 @@
 #X obj 28 38 route bang;
 #X obj 28 90 list append \$1;
 #X obj 81 61 t b a;
+#X obj 186 21 inlet;
 #X connect 0 0 9 0;
 #X connect 2 0 8 0;
 #X connect 3 0 7 0;
@@ -25,3 +26,4 @@
 #X connect 10 0 2 0;
 #X connect 11 0 10 0;
 #X connect 11 1 10 1;
+#X connect 12 0 10 1;
