@@ -1,0 +1,27 @@
+#N canvas 1 49 958 560 10;
+#X obj 159 29 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array \$0-L 4000 float 2;
+#X coords 0 1 4000 -1 200 140 1;
+#X restore 510 129 graph;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array \$0-R 4000 float 2;
+#X coords 0 1 4000 -1 200 140 1 0 0;
+#X restore 713 129 graph;
+#X obj 248 312 tabwrite~ \$0-L;
+#X obj 289 284 tabwrite~ \$0-R;
+#X obj 159 49 t b b b;
+#X obj 160 89 impulse~ 1;
+#X obj 163 376 dac~;
+#X obj 165 239 reverb-001~;
+#X connect 0 0 5 0;
+#X connect 5 0 6 0;
+#X connect 5 1 3 0;
+#X connect 5 2 4 0;
+#X connect 6 0 8 0;
+#X connect 6 0 8 1;
+#X connect 8 0 3 0;
+#X connect 8 0 7 0;
+#X connect 8 1 4 0;
+#X connect 8 1 7 1;
