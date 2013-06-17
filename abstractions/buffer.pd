@@ -1,0 +1,31 @@
+#N canvas 1 49 958 1150 10;
+#X obj 649 112 inlet;
+#X obj 649 134 bind \$0 rec;
+#X msg 679 359 \; \$2-buffer resize \$1;
+#X obj 679 255 f \$3;
+#X obj 679 282 pack f \$0;
+#X obj 679 202 loadbang;
+#X obj 679 224 t b b;
+#X obj 247 241 tgl 15 1 \$0-armed empty rec -1 -7 0 10 -262144 -258113
+-1 0 1;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array \$0-delay 1 float 2;
+#X coords 0 1 1 -1 140 50 1 0 0;
+#X restore 104 206 graph;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array \$0-buffer 1 float 0;
+#X coords 0 1 1 -1 140 50 1 0 0;
+#X restore 105 136 graph;
+#X obj 247 212 bng 15 250 50 0 empty empty clr -1 -7 0 10 -262144 -1
+-1;
+#X obj 679 304 t l l;
+#X msg 723 324 \; \$2-delay resize \$1;
+#X obj 307 109 inlet;
+#X connect 0 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 11 0;
+#X connect 5 0 6 0;
+#X connect 6 0 3 0;
+#X connect 11 0 2 0;
+#X connect 11 1 12 0;
+#X coords 0 -1 1 1 165 160 1 100 100;
