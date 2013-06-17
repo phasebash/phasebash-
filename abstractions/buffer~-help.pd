@@ -1,0 +1,11 @@
+#N canvas 961 521 958 205 10;
+#X obj 89 86 *~;
+#X obj 89 33 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 89 63 impulse~ 96000;
+#X obj 169 101 osc~ 2;
+#X obj 90 151 buffer~ \$0 boof 2000;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 1;
