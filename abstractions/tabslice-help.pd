@@ -1,0 +1,26 @@
+#N canvas 1 49 958 1150 10;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array \$0-array 20 float 3;
+#A 0 0 0 0.199998 0.442852 0.557137 0.171427 -0.371425 -0.728564 -0.757135
+-0.842848 -0.928562 -0.757135 -0.442852 0.714278 0.528566 0 0 0 0 0
+;
+#X coords 0 1 19 -1 200 140 1;
+#X restore 558 86 graph;
+#X msg 190 221 2 5;
+#X obj 203 347 list prepend set;
+#X obj 203 369 list trim;
+#X msg 203 391 0.199998 0.442852 0.557137 0.171427;
+#X msg 243 209 0 3;
+#X obj 301 169 f \$0;
+#X obj 291 112 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 301 191 \$1-array 0 4;
+#X obj 203 325 tabslice \$0-array;
+#X connect 1 0 9 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 5 0 9 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 0;
+#X connect 9 0 2 0;
