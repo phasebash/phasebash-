@@ -1,0 +1,12 @@
+#N canvas 768 49 1150 1150 10;
+#X text 566 305 Expert Sleepers ES3;
+#X obj 453 358 print;
+#X msg 450 237 60 \, 72 \, 84 \, 96 \, 108 \, 120;
+#X floatatom 472 273 5 0 0 0 - - -;
+#X obj 453 307 mtocv -10 10 60;
+#X text 632 334 MOTU 828mkii;
+#X obj 494 334 mtocv -4.95 4.95 60;
+#X connect 2 0 4 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 6 0 1 0;

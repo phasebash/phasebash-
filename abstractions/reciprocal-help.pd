@@ -1,0 +1,6 @@
+#N canvas 768 49 1150 1150 10;
+#X obj 267 326 reciprocal;
+#X floatatom 263 262 5 0 0 0 - - -;
+#X floatatom 267 348 5 0 0 0 - - -;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
