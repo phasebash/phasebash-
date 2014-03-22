@@ -1,10 +1,11 @@
-#N canvas 1750 329 450 300 10;
+#N canvas 776 330 450 300 10;
 #X obj 22 27 inlet;
 #X obj 30 258 outlet;
 #X obj 50 132 proxy \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8;
 #X obj 22 49 t b l b;
 #X obj 53 84 for-each;
 #X obj 41 197 collect;
+#X obj 138 30 inlet;
 #X connect 0 0 3 0;
 #X connect 2 0 5 0;
 #X connect 3 0 5 0;
@@ -12,3 +13,4 @@
 #X connect 3 2 5 1;
 #X connect 4 0 2 0;
 #X connect 5 0 1 0;
+#X connect 6 0 2 1;

@@ -1,6 +1,6 @@
-#N canvas 1 49 1150 1150 10;
-#X msg 245 231 set 4 1;
-#X obj 141 261 grid H 4 4;
-#X obj 381 233 preset H;
+#N canvas 1 22 647 248 10;
+#X msg 245 -671 set 4 1;
+#X obj 141 -641 grid H 4 4;
+#X obj 381 -669 preset H;
 #X connect 0 0 1 1;
-#X coords 0 1150 1 1149 85 60 0;
+#X coords 0 248 1 247 85 60 0;

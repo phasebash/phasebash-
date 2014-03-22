@@ -1,4 +1,4 @@
-#N canvas 1 49 1150 1150 10;
+#N canvas 542 38 775 455 10;
 #X obj 103 119 hradio 15 1 0 8 \$0-radio-out \$0-radio-in empty 0 -8
 0 10 -262144 -1 -1 0;
 #X obj 305 27 inlet;
@@ -17,7 +17,7 @@
 #X restore 305 62 pd in-range;
 #X obj 305 87 s \$0-radio-in;
 #X obj 305 120 r \$0-radio-out;
-#N canvas 1 49 1150 1150 send-next 0;
+#N canvas 165 22 1150 804 send-next 0;
 #X obj 28 7 inlet;
 #X obj 27 432 outlet;
 #X obj 50 192 *;
@@ -56,7 +56,7 @@
 #X connect 16 0 10 0;
 #X connect 17 0 11 0;
 #X restore 305 142 pd send-next;
-#N canvas 1153 442 766 166 persist 0;
+#N canvas 520 152 514 502 persist 0;
 #X obj 100 112 inlet;
 #X obj 100 151 unpack f f;
 #X obj 165 225 textfile;
@@ -65,7 +65,7 @@
 #X obj 319 360 pack 0 f;
 #X connect 0 0 1 0;
 #X restore 305 164 pd persist;
-#N canvas 1 49 1150 1150 listen-for-change 0;
+#N canvas 211 46 1150 804 listen-for-change 0;
 #X obj 246 133 r \$1;
 #X obj 246 155 route set;
 #X obj 246 191 t l l;
@@ -77,9 +77,11 @@
 #X obj 216 315 swap;
 #X obj 395 390 +;
 #X obj 427 358 * 8;
+#X obj 281 226 print setting;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 6 0;
+#X connect 2 0 11 0;
 #X connect 4 0 5 1;
 #X connect 5 0 10 0;
 #X connect 6 0 8 0;
@@ -93,7 +95,7 @@
 #X restore 412 141 pd listen-for-change;
 #X obj 527 370 table \$0-preset-buffer;
 #X obj 527 350 v \$0-preset-buffer-size;
-#N canvas 1 49 1150 1150 pairing-with-slave 0;
+#N canvas 120 22 1150 804 pairing-with-slave 0;
 #X obj 54 133 loadbang;
 #X obj 54 155 t b b b b;
 #X obj 114 252 s \$1;
@@ -119,8 +121,22 @@
 #X connect 10 0 3 0;
 #X connect 12 0 11 0;
 #X restore 415 119 pd pairing-with-slave;
+#X obj 229 119 bng 15 250 50 0 \$0-save-out empty empty 17 7 0 10 -262144
+-258113 -1;
+#X obj 594 125 r \$0-save-out;
+#N canvas 943 537 450 300 save-buffer-range 0;
+#X obj 38 32 inlet;
+#X obj 92 58 r \$0-radio-out;
+#X obj 77 88 f;
+#X obj 55 195 s \$1;
+#X msg 56 141 save;
+#X connect 0 0 4 0;
+#X connect 1 0 2 1;
+#X connect 4 0 3 0;
+#X restore 594 147 pd save-buffer-range;
 #X connect 1 0 4 0;
 #X connect 4 0 5 0;
 #X connect 6 0 7 0;
 #X connect 7 0 8 0;
-#X coords 0 -1 1 1 126 37 1 100 100;
+#X connect 14 0 15 0;
+#X coords 0 -1 1 1 146 37 1 100 100;
