@@ -1,0 +1,31 @@
+#N canvas 354 462 450 300 10;
+#X obj 23 25 inlet;
+#X obj 112 114 inlet;
+#X obj 80 88 inlet;
+#X obj 23 224 select 1;
+#X obj 23 256 outlet;
+#X obj 136 142 inlet;
+#X text 119 87 specify desired number of hits per bar;
+#X text 182 139 specify length of bar;
+#X text 146 113 rhythm offset/rotation;
+#X text 62 23 <-- send an integer to find out if there should be a
+hit on that beat;
+#X obj 23 159 % \$3;
+#X text 22 336 Generates 'euclidean rhythms' (see cgm.cs.mcgill.ca/~godfried/publications/banff.pdf).
+Ideally to be used with a [metro]-powered [f ]x[+ 1] counter attached
+to the first inlet. Hits per bar \, offset and bar length can be set
+by the first three arguments respectively.;
+#X text 85 223 <-- bang out on each hit. (Silent on rest.);
+#X obj 23 94 + \$2;
+#X obj 23 126 * \$1;
+#X obj 23 192 < \$1;
+#X connect 0 0 13 0;
+#X connect 1 0 13 1;
+#X connect 2 0 14 1;
+#X connect 2 0 15 1;
+#X connect 3 0 4 0;
+#X connect 5 0 10 1;
+#X connect 10 0 15 0;
+#X connect 13 0 14 0;
+#X connect 14 0 10 0;
+#X connect 15 0 3 0;

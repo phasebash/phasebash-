@@ -1,0 +1,3 @@
+#N canvas 382 22 450 300 10;
+#X obj 155 131 pattern;
+#X obj 175 167 pattern 5;

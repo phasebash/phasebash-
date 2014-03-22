@@ -1,0 +1,8 @@
+#N canvas 547 411 450 300 10;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array \$0-table 6 float 0;
+#X coords 0 1 5 -1 200 140 1;
+#X restore 174 -82 graph;
+#X floatatom -4 8 5 0 0 0 - - -, f 5;
+#X obj -3 41 tabwrite-at \$0-table 1 0.5;
+#X connect 1 0 2 0;
