@@ -1,6 +1,8 @@
 #N canvas 810 536 450 300 10;
-#X obj 78 88 +* 2 5;
-#X floatatom 78 111 5 0 0 0 - - -, f 5;
-#X floatatom 73 35 5 0 0 0 - - -, f 5;
+#X obj 21 70 +* 2 5;
+#X floatatom 21 93 5 0 0 0 - - -, f 5;
+#X floatatom 21 46 5 0 0 0 - - -, f 5;
+#X text 86 69 Y=B + MX;
+#X text 19 4 [+* B X]: Add then multiply in one object.;
 #X connect 0 0 1 0;
 #X connect 2 0 0 0;

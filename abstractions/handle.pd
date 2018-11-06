@@ -1,10 +1,10 @@
-#N canvas 421 466 450 300 10;
+#N canvas 421 466 485 524 10;
 #X obj 25 15 inlet;
-#X obj 25 277 any;
-#X obj 25 129 route \$2;
-#X obj 25 370 s \$1-\$2;
-#X obj 258 17 inlet;
-#X obj 138 300 outlet;
+#X obj 25 74 any;
+#X obj 25 47 route \$2;
+#X obj 25 167 s \$1-\$2;
+#X obj 140 58 inlet;
+#X obj 70 74 outlet;
 #X connect 0 0 2 0;
 #X connect 1 0 3 0;
 #X connect 2 0 1 0;
