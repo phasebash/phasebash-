@@ -1,6 +1,6 @@
 #N canvas 482 49 958 559 10;
 #X obj 26 32 inlet;
-#X obj 43 508 outlet~;
+#X obj 42 508 outlet~;
 #X obj 789 41 inlet;
 #X obj 789 64 bind \$0 a \$1;
 #X obj 789 86 bind \$0 d \$2 100;
@@ -8,28 +8,28 @@
 #X obj 789 130 bind \$0 ds \$4 0;
 #X obj 41 386 vline~;
 #X obj 789 152 bind \$0 loop \$5;
-#X obj 316 78 r \$0-a;
-#X obj 338 101 r \$0-as;
-#X obj 586 93 r \$0-d;
-#X obj 608 116 r \$0-ds;
-#X obj 630 139 r \$0-loop;
+#X obj 262 120 r \$0-a;
+#X obj 280 142 r \$0-as;
+#X obj 479 173 r \$0-d;
+#X obj 523 174 r \$0-ds;
+#X obj 572 175 r \$0-loop;
 #X obj 41 433 vcurve~;
-#X obj 142 393 when == 1 bang;
-#X obj 128 432 f;
-#X obj 128 467 del;
+#X obj 152 393 when == 1 bang;
+#X obj 152 432 f;
+#X obj 152 467 del;
 #X obj 26 54 t b;
-#X obj 128 499 s;
-#X obj 649 169 symbol \$0-do-a;
-#X obj 382 169 symbol \$0-do-d;
+#X obj 152 499 s;
+#X obj 635 175 symbol \$0-do-a;
+#X obj 329 142 symbol \$0-do-d;
 #X obj 26 76 s \$0-do-a;
-#X obj 248 110 r \$0-do-a;
-#X obj 524 138 r \$0-do-d;
-#X obj 67 312 pack f f f;
-#X obj 108 231 unpack f f f f f s;
-#X obj 542 194 pack 1 0 f f f s;
-#X msg 43 355 \$1 \, \$2 \$3;
+#X obj 225 88 r \$0-do-a;
+#X obj 442 152 r \$0-do-d;
+#X obj 40 317 pack f f f;
+#X obj 98 224 unpack f f f f f s;
+#X obj 442 207 pack 1 0 f f f s;
+#X msg 41 355 \$1 \, \$2 \$3;
 #X obj 225 178 pack 0 1 f f 1 s;
-#X obj 176 465 symbol;
+#X obj 200 465 symbol;
 #X obj 425 41 loadbang;
 #X obj 152 345 swap;
 #X obj 106 107 vsl 15 50 0 127 0 0 empty empty a 5 25 1 10 -262144
@@ -38,7 +38,6 @@
 -4034 -162280 3300 1;
 #X obj 182 106 tgl 15 0 empty empty loop -22 8 2 10 -262144 -4034 -162280
 0 1;
-#X obj 37 37;
 #X obj 151 125 hsl 45 15 0 127 0 0 empty empty a_curv 5 7 1 10 -262144
 -4034 -162280 0 1;
 #X obj 151 145 hsl 45 15 0 127 0 0 empty empty d_curv 5 7 1 10 -262144
