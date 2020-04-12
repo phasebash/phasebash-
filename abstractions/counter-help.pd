@@ -1,4 +1,4 @@
-#N canvas 1 49 958 560 10;
+#N canvas 1971 484 958 560 10;
 #X obj 27 74 print c;
 #X obj 27 25 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -8,37 +8,36 @@
 #X obj 214 98 print c;
 #X obj 214 49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 227 196 print;
+#X obj 224 196 print;
 #X obj 224 150 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 102 17 rewind;
 #X obj 319 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 319 193 print c;
-#X msg 394 198;
 #X msg 152 14 loop 1;
 #X msg 199 17 loop 0;
 #X obj 27 49 counter 0 5 1;
 #X obj 30 168 counter 0 5 2;
 #X obj 214 73 counter 1 1 1;
-#X obj 227 174 counter;
+#X obj 224 174 counter;
 #X obj 319 171 counter 0 3 1;
 #X obj 102 74 print last;
 #X obj 289 98 print last;
 #X obj 105 193 print last;
-#X connect 1 0 14 0;
-#X connect 3 0 15 0;
-#X connect 5 0 16 0;
-#X connect 7 0 17 0;
-#X connect 8 0 14 1;
-#X connect 9 0 18 0;
-#X connect 12 0 14 1;
-#X connect 13 0 14 1;
-#X connect 14 0 0 0;
-#X connect 14 1 19 0;
-#X connect 15 0 2 0;
-#X connect 15 1 21 0;
-#X connect 16 0 4 0;
-#X connect 16 1 20 0;
-#X connect 17 0 6 0;
-#X connect 18 0 10 0;
+#X connect 1 0 13 0;
+#X connect 3 0 14 0;
+#X connect 5 0 15 0;
+#X connect 7 0 16 0;
+#X connect 8 0 13 1;
+#X connect 9 0 17 0;
+#X connect 11 0 13 1;
+#X connect 12 0 13 1;
+#X connect 13 0 0 0;
+#X connect 13 1 18 0;
+#X connect 14 0 2 0;
+#X connect 14 1 20 0;
+#X connect 15 0 4 0;
+#X connect 15 1 19 0;
+#X connect 16 0 6 0;
+#X connect 17 0 10 0;
