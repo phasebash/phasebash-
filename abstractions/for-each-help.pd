@@ -1,4 +1,4 @@
-#N canvas 1 49 958 1150 10;
+#N canvas 3105 491 433 420 10;
 #X msg 172 96 1 2 3 4 5;
 #X obj 110 43 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -7,7 +7,7 @@
 #X obj 315 175 for-each;
 #X msg 318 140 1 2 3 4 5;
 #X obj 315 197 print;
-#X obj 113 129 for-each + 1;
+#X obj 113 129 for-each;
 #X connect 0 0 7 1;
 #X connect 1 0 7 0;
 #X connect 2 0 7 0;

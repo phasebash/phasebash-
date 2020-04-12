@@ -1,0 +1,34 @@
+#N canvas 2946 1036 482 360 12;
+#X obj 37 44 each-index;
+#X obj 37 67 pack f f;
+#X msg 37 21 99 100 200 400;
+#X obj 37 113 print each-index;
+#X obj 240 103 array get \$0-toots 0 -1;
+#X obj 240 126 each-index;
+#X obj 240 149 pack f f;
+#X obj 239 67 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 240 172 print toots;
+#X obj 226 26 array define -k \$0-toots 55;
+#A 0 0 0.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.893333 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X obj 67 197 list 1 2 3 4 5;
+#X obj 72 225 each-index;
+#X obj 72 248 pack f f;
+#X obj 72 294 print each-index;
+#X obj 62 164 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 5 1 6 1;
+#X connect 6 0 8 0;
+#X connect 7 0 4 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 11 1 12 1;
+#X connect 12 0 13 0;
+#X connect 14 0 10 0;

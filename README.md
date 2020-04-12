@@ -1,16 +1,15 @@
 Overview
 ========
-Phasebash~ is a collection of low-level abstractions which enable the development of 
-more complicated patches using vanilla Puredata. The goal is to cleanly extend and lift
-Puredata patches into the modern world with more useful paradigms not explicitly provided
-by the core Puredata object library.  Important gaps include:
+Phasebash~ is a collection of abstractions which enable the development of 
+more concise patches using vanilla PureData. The goal is to cleanly extend and lift
+Puredata patches with more expressive paradigms not explicitly provided
+by the core PureData object library.  These functions include:
 
 - Dynamic graph creation
 - Functional programming
 - Databinding
-- API declaration and definition
-- Collection operations
-- Widgets
+- Sequencing primitives
+- Graphic sequence components
 
 Installation
 ------------
