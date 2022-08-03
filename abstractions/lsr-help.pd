@@ -1,0 +1,15 @@
+#N canvas 445 360 450 300 12;
+#X obj 89 122 lsr 8;
+#X obj 89 146 print;
+#X floatatom 88 86 5 0 0 0 - - - 0;
+#X floatatom 193 79 5 0 0 0 - - - 0;
+#X obj 194 115 lsr 2;
+#X obj 194 139 unpack f f;
+#X obj 190 173 print current;
+#X obj 288 172 print previous;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 5 1 7 0;
